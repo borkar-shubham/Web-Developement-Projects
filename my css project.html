@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Project</title>
+
+<style>
+
+		body{
+			margin:0;
+			padding:0;
+			line-height:1.5em;
+		}
+		
+		#header{
+			background:black;
+			font-family:Arial;
+			height:100px;
+		}
+		
+		#contentwrapper{
+			float:left;
+			width:100%;
+		}
+		
+		#contentcolumn{
+			margin: 0 230px 0 230px;
+		}
+		
+		#leftcolumn{
+			float: left;
+			width: 230px;
+			margin-left: -100%;
+			background: #24C8FF;
+		}
+		
+		#rightcolumn {
+			float: left;
+			width: 230px;
+			margin-left: -230px;
+			background:#FFFB00;
+		}
+
+		.innertext {
+			margin:20px;
+			font-family: Comic Sans MS;
+			color:#5E5E5E;
+		}
+
+		#footer {
+			clear:left; /* Cannot Float on Left */
+			width:100%;
+			background:black;
+			color:#FFF;
+			font-family:Arial;
+			text-align:center;
+			padding:4px;
+		}
+		
+		/* ### Navigation Bar ### */
+		
+		ul {
+			list-style-type:none;
+			margin:0;
+			padding:0;
+			background-color:#000;
+		}
+		
+		li {
+			float:left;
+			border-right:1px solid #bbb;
+		}
+		
+		li:last-child {
+			border-right:none;
+		}
+		
+		li a {
+			display:block;
+			color:white;
+			text-align:center;
+			padding:14px 16px;
+			text-decoration:none;
+		}
+		
+		li a:hover:not(.active) {
+			background-color:#808080;
+		}
+		
+		.active {
+			background-color:#0099ff;
+		}
+		
+		/*  ### Responsive Layout CSS ###  */
+		
+		@media (max-width: 840px) {    /* This will drop right column down */
+		
+		#leftcolumn {
+				margin-left:-100%;
+			}
+		
+		#rightcolumn {
+				float:none;
+				width:100%;
+				margin-left:0;
+				clear:both;
+			}
+		
+		#contentcolumn {
+				margin-right: 0;   /* this will set margins to left column width */
+			}
+			
+		} 
+
+		@media (max-width: 600px) {  /* This drops left column down */
+			
+			#leftcolumn {
+				float: none;
+				width: 100%;
+				clear: both;
+				margin-left: 0;
+			}
+			
+			#contentcolumn {
+				margin-left: 0;
+			}
+		
+		}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="container">
+	
+	<div id="header">
+		
+		<ul style="display: inline;">
+		  <li><a class="active" href="#home">Home</a></li>
+		  <li><a href="#About">About</a></li>
+		  <li><a href="#News">News</a></li>
+		  <li><a href="#Contact">Contact</a></li>	
+		</ul>
+		
+	</div>
+	
+	<div id="contentwrapper">
+	
+		<div id="contentcolumn">
+		
+			<div class="innertext">
+			
+				<b>Welcome!</b><br/>Analogies, Alphabetical and Number Series, Coding and Decoding, Mathematical operations, Relationships,
+					Syllogism, Jumbling, Venn Diagram, Data Interpretation and Sufficiency, Conclusions and Decision
+					Making, Similarities and Differences, Analytical reasoning, Classification, Directions, Statement –
+					Arguments and Assumptions etc. Number systems, BODMAS, Decimals, Fractions, LCM and HCF, Ratio and Proportion, Percentages,
+					Mensuration, Time and Work, Time and Distance, Simple and Compound Interest, Profit and Loss, Algebra,
+					Geometry, Trigonometry, Elementary Statistics, Square Root, Age Calculations, Calendar Clock, Pipes 
+					Cistern.
+			
+			</div>	
+		</div>
+	</div>
+	
+	<div id="leftcolumn">
+		<div class="innertext">
+			<b>Left Column:<em>230px</em></b><br/>Knowledge of Current affairs, Indian geography, culture and history of India including freedom struggle,
+			Indian Polity and constitution, Indian Economy, Environmental issues concerning India and the World, Sports,
+			General scientific and technological developments etc. The Questions will be of objective type with multiple choices and are likely to include questions pertaining to
+			General Awareness, Physics and Chemistry, Basics of Computers and Applications, Basics of Environment
+			and Pollution Control and Technical abilities for the post. The syllabus for General Awareness, Physics and
+			Chemistry, Basics of Computers and Applications, Basics of Environment and Pollution Control is
+			common for all notified posts Global warming; Acid rain.
+		</div>
+	</div>
+	
+	<div id="rightcolumn">
+		<div class="innertext">
+			<b>Right Column:<em>230px</em></b><br/>Knowledge of Current affairs, Indian geography, culture and history of India including freedom struggle,
+			Indian Polity and constitution, Indian Economy, Environmental issues concerning India and the World, Sports,
+			General scientific and technological developments. Architecture of Computers; input and Output devices; Storage devices, Networking, Operating System like
+			Windows, Unix, Linux; MS Office; Various data representation; Internet and Email; Websites Web
+			Browsers; Computer Virus. Basics of Environment; Adverse effect of environmental pollution and control strategies; Air, water and Noise
+			pollution, their effect and control; Waste Management, Global warming; Acid rain; Ozone depletion.
+		</div>
+	</div>
+	
+	<div id="footer">Footer</div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+﻿img {
+	padding:20px 20px 20px 20px;
+	border-style:double;
+	opacity:0.3;
+}
+
+.textclass1{
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-size:medium;
+	font-style:italic;
+	width:40%;
+	color:maroon;
+	border-style:dotted;
+	border-color:lime;
+	padding:30px 30px 30px 30px;
+	letter-spacing:4px;
+	display:inline-block;
+}
+
+.textclass2{
+	text-align:center;
+	border-style:dashed;
+	border-color:black;
+	word-spacing:5px;
+	padding:30px 30px 30px 30px;
+	text-decoration:underline;
+	font-family:"Comic Sans MS";
+	display:inline-block;
+	width:40%;
+}
+
+table{
+
+}
